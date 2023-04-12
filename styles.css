@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#container{
+    /* border: 2px solid black; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+aside{
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0.843);
+}
+
+.menu__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #fff;
+}
+.menu{
+    /* border: 2px solid green; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu ul li{
+    list-style: none;
+    margin: 2rem 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.menu ul li:hover{
+    /* background-color: #000; */
+    background-color: rgb(114, 3, 3);
+    padding: 3px 18px;
+    width: 100%;
+}
+
+.menu button{
+    padding: 4px;
+    background-color: rgb(114, 3, 3);
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+}
+.menu button:hover{
+    background-color: rgb(233, 3, 3);
+    cursor: pointer;
+}
+
+/* styling for main */
+main{
+    /* border: 2px solid red; */
+    overflow-y: scroll;
+}
+
+.search{
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    max-width: 350px;
+    margin: 2rem auto;
+}
+.search input[type="search"]{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+.search input[type="search"]::placeholder{
+    font-size: 17px;
+}
+
+.sec{
+    /* border: 2px solid red; */
+    max-width: 950px;
+    margin: 2rem auto;
+}
+.movie__items{
+    display: flex;
+    justify-content: space-between;
+}
+.view{
+    border: 2px solid rgb(18, 4, 4);
+    width: 200px;
+    height: 200px;
+    margin-top: 1rem;
+    border-left: none;
+    border-right: none;
+}
+.view iframe{
+    width: 100%;
+    height: 155px;
+}
+
+.view p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
